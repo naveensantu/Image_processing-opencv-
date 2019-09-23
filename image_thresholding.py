@@ -25,3 +25,4 @@ th2 = cv2.adaptiveThreshold(new_image,255,cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH
 show_pic(th2)
 blended = cv2.addWeighted(src1=th1, alpha=0.6, src2=th2, beta=0.4, gamma=0)
 show_pic(blended)
+print("making changes")
