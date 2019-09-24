@@ -23,6 +23,7 @@ display_img(gamma)
 j= load_img()
 font = cv2.FONT_HERSHEY_COMPLEX
 cv2.putText(j, text="text checking", org=(10,600), fontFace=font, fontScale=10, color=(255,0,0), thickness=4)
+j.shape
 kernel = np.ones(shape=(5,5),dtype=np.float32)/25
 kernel
 dst= cv2.filter2D(j, -1, kernel=kernel)
